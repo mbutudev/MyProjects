@@ -13,10 +13,9 @@ h1, h2, h3, h4, h5, h6, p, span {
   margin: 0;
   color: #666;
 }
-
 .container {
   max-width: 1920px;
-  width: 1000px;
+  width: 100%;
   /* width: 1000%;  REMOVIDO, isso quebrava layout */
 }
 
@@ -109,7 +108,7 @@ a:hover {
 #search-form p {
   margin-top: 30px;
   margin-bottom: 60px;
-  font-size: 18px;
+  font-size:18px;
   font-weight: 300;
 }
 
@@ -122,5 +121,21 @@ a:hover {
   font-size: 18px;
   margin: 0 10px;
 }
-
-#search
+#search-form input[type=submit]{
+  background:#3389ff;
+  text-transform:uppercase;
+  color:#ccc;
+  cursor:pointer;
+  transition:0,5s;
+}
+#search-form input[type=submit]:hover{
+  background-color:#2e5284
+}
+/*ultimas vagas enviadas*/
+.wrapper li{
+  border:5px solid #f1f;
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  float:left;
+}
